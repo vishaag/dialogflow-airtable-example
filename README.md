@@ -59,7 +59,7 @@ Option 1. Install a tunneling software like ngrok (https://ngrok.com/) to get a 
 Option 2. A better option would be to deploy it on a real live server. One of the easiest way to do this would be
 deploying it on glitch.  
 1. Make an account or login to [glitch](http://glitch.me)
-2. Go to [this glitch link](https://glitch.com/edit/#!/gaudy-coral) and click on 'Remix to edit' so that you can clone this 
+2. Go to [this glitch link](https://glitch.com/edit/#!/gaudy-coral) and click on ```Remix to edit``` so that you can clone this 
 project to your account
 3. Follow the install section of this document and paste the API keys in the .env file in glitch. Note that the .env file is already present in glitch by default and you don't need to create a new one.
 4. Get your live glitch link (by clicking on Show -> In a new window) and paste it into the the Webhook URL 
@@ -68,9 +68,9 @@ use your server on glitch as the backend. Make sure to save your changes.
 
 ## Using it on Google Assistant
 
-1.  In the right hand side of your Dialogflow agent page, you can find a a test area. Click on 'See how it works in Google Assistant'
+1.  In the right hand side of your Dialogflow agent page, you can find a a test area. Click on ```See how it works in Google Assistant```
 This will open the google assistant console.
-2.  Click on 'Talk to my app' in the chatbot simulator to start chatting with your Changi Attractions Bot.
+2.  Click on ```Talk to my app``` in the chatbot simulator to start chatting with your Changi Attractions Bot.
 You can ask the following phrases : 
 ```
 attractions near me
@@ -80,7 +80,7 @@ attractions near jewel
 things to see in t2
 ```
 Explore the Attraction intent in your Dialogflow agent to find what other phrases you can ask. You can also add more training phrases. Make sure you
-tag the 'airport-location' entity if you want to filter based on location.
+tag the ```airport-location``` entity if you want to filter based on location.
 
 
 ## Links
