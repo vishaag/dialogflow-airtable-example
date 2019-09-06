@@ -61,7 +61,7 @@ Explore the Attraction intent in your Dialogflow agent to find what other phrase
 tag the ```airport-location``` entity if you want to filter based on location.
 
 ### Demo
-💃💃💃 Talk to the bot! 🕺🕺🕺
+💃💃💃 Talk to the bot! 🕺🕺🕺  
 ![alt text][logo]
 
 [logo]: https://cdn.glitch.com/b83fbab5-1da9-4904-9d90-9b27a994f32e%2Fchatbot-demo.gif?v=1567742893772 "Chatbot Demo"
