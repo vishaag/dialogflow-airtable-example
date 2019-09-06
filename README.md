@@ -62,8 +62,7 @@ deploying it on glitch.
 1. Make an account or login to [glitch](http://glitch.me)
 2. Go to [this glitch link](https://glitch.com/edit/#!/gaudy-coral) and click on 'Remix to edit' so that you can clone this 
 project to your account
-3. Follow the pre-requisite and install section of this document. Note that the .env file is already present in glitch
-by default and you don't need to create a new one.
+3. Follow the install section of this document and paste the API keys in the .env file in glitch. Note that the .env file is already present in glitch by default and you don't need to create a new one.
 4. Get your live glitch link (by clicking on Show -> In a new window) and paste it into the the Webhook URL 
 in your Dialowflow Agent Fulfulment Tab (instead of the ```https://gaudy-coral.glitch.me/```). The Dialogflow agent will now
 use your server on glitch as the backend. Make sure to save your changes.
