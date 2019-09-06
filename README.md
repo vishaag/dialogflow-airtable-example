@@ -15,7 +15,7 @@ See deployment for notes on how to deploy the project on a live system.
    3. Select the ```Changi-Attractions.zip``` (in the Dialogflow folder) and import it into dialogflow
    4. Explore the the ```intents``` and ```entities``` tab
    
-2. Create an account in Airtable and create a new workspace. Click on ```Add a base``` and ```import a spreadsheet```, import the .csv file (in the database folder) and name it 'Changi'.
+2. Create an account in Airtable and create a new workspace. Click on ```Add a base``` and ```import a spreadsheet```, import the .csv file (in the database folder) and name it ```Changi```.
 3. Open the created base and you can see the sheet name as ```Imported table```. Change it to ```Attractions```.
 3. Retrieve API keys from Airtable
    1. Account API key: 
