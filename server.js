@@ -1,8 +1,8 @@
 var Airtable = require('airtable');
 
 var attractionsBase = new Airtable({
-  apiKey: process.env.AIRTABLE_API_KEY,
-}).base(process.env.AIRTABLE_ATTRACTIONS_ID);
+  apiKey: `${process.env.AIRTABLE_API_KEY}`,
+}).base(`${process.env.AIRTABLE_ATTRACTIONS_ID}`);
 
 var express = require('express');
 var expressApp = express();
