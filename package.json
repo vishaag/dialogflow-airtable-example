@@ -7,10 +7,11 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.12.4",
-		"airtable": "0.5.0",
+		"actions-on-google": "latest",
+		"airtable": "^0.7.1",
 		"body-parser": "latest",
-		"actions-on-google": "latest"
+		"dotenv": "^8.1.0",
+		"express": "^4.12.4"
 	},
 	"engines": {
 		"node": "8.x"
