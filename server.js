@@ -73,7 +73,7 @@ app.intent('Attractions', async (conv, params) => {
       name: myResponse[i].get('Name'),
       location : myResponse[i].get('Location'),
       address : myResponse[i].get('Address'),
-      timing : myResponse[i].get('Timings'),
+      timings : myResponse[i].get('Timings'),
       accessibleTo: myResponse[i].get('AccessibleTo'),
       imageURL: myResponse[i].get('Image')
     });
@@ -86,7 +86,7 @@ app.intent('Attractions', async (conv, params) => {
   for(i=0; i<attractionsArray.length; ++i) {
     carouselItems.items[attractionsArray[i].name] = {
       title: attractionsArray[i].name,
-      description: attractionsArray[i].address,
+      description: attractionsArray[i].address + ' - ' + attractionsArray[i].timings,
       image: new Image({
         url: attractionsArray[i].imageURL,
         alt: 'Image of' + attractionsArray[i].name,
