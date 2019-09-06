@@ -39,10 +39,10 @@ app.intent('Default Welcome Intent', conv => {
 });
 
 
-// If user inputs location, return it, otherwise return T2 by default
+// If user inputs location, return it, otherwise return T3 by default
 const resolveLocation = function(location) {
   if(location == '') {
-    return 'T2'
+    return 'T3'
   } else {
     return location 
   }
@@ -51,10 +51,11 @@ const resolveLocation = function(location) {
 //Get Attractions Data from Airtable
 const getAttractionsData = async (location) => {
     try {
+        // Return data from the Attractions sheet in the Changi Base.
         return await attractionsBase('Attractions').select({
           maxRecords: 7,
           view: "Grid view",
-          filterByFormula: "{Location} ='"+location+"'"
+          filterByFormula: "{Location} ='"+location+"'" //Filter data by the user provided location (T1, T2, etc.)
         }).all();
     }
     catch(err) {
@@ -109,8 +110,6 @@ app.intent('Default Fallback Intent', conv => {
 
 // POST Endpoint for dialogflow
 expressApp.post("/", app)
-
-// expressApp.get("/", function(request, response) {});
 
 var listener = expressApp.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
