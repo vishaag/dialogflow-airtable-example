@@ -2,7 +2,7 @@
 An example to demonstrate how you can use Airtable as the database for a dialogflow chatbot. The example chatbot can respond
 with the different Attractions in Changi Airport based on the airport location. 
 
-## Getting Started
+# Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Although if you want this to work with Google Assistant, you would have to deploy it on a live system or use a tool like ngrok to expose your local web server. 
 See deployment for notes on how to deploy the project on a live system.
@@ -38,13 +38,13 @@ AIRTABLE_ATTRACTIONS_ID=
 ```
 * Paste the API keys we copied earlier into their respective places and save the file
 
-## Deployment
+### Deployment
 
 * Get your live glitch link (by clicking on Show -> In a new window) and paste it into the the Webhook URL 
 in your Dialowflow Agent Fulfulment Tab (instead of the ```https://gaudy-coral.glitch.me/```). The Dialogflow agent will now
 use your server on glitch as the backend. Make sure to save your changes.
 
-## Using it on Google Assistant
+### Using it on Google Assistant
 
 1.  In the right hand side of your Dialogflow agent page, you can find a a test area. Click on ```See how it works in Google Assistant```
 This will open the google assistant console.
@@ -67,7 +67,7 @@ tag the ```airport-location``` entity if you want to filter based on location.
 [logo]: https://cdn.glitch.com/b83fbab5-1da9-4904-9d90-9b27a994f32e%2Fchatbot-demo.gif?v=1567742893772 "Chatbot Demo"
 
 
-## Links
+# Links
 * [Github Link](https://github.com/vishaag/dialogflow-airtable-example) - Project Github page
 * [Glitch Project](https://glitch.com/edit/#!/gaudy-coral) - Example application running on glitch
 * [Glitch](http://glitch.me) - Glitch website
