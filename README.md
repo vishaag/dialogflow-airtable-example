@@ -54,17 +54,22 @@ with Google Assistant, you will need to deploy it on a live system.
 
 ## Deployment
 
-Option 1. Install a tunneling software like ngrok (https://ngrok.com/) to get a public URL for your localhost.
+#### 1️⃣ Step 1
+__Option 1__  
+Install a tunneling software like ngrok (https://ngrok.com/) to get a public URL for your localhost.
 
-Option 2. A better option would be to deploy it on a real live server. One of the easiest way to do this would be
+__Option 2 (Recommended)__  
+A better option would be to deploy it on a real live server. One of the easiest way to do this would be
 deploying it on glitch.  
-1. Make an account or login to [glitch](http://glitch.me)
-2. Go to [this glitch link](https://glitch.com/edit/#!/gaudy-coral) and click on ```Remix to edit``` so that you can clone this 
-project to your account
-3. Follow the install section of this document and paste the API keys in the .env file in glitch. Note that the .env file is already present in glitch by default and you don't need to create a new one.
-4. Get your live glitch link (by clicking on Show -> In a new window) and paste it into the the Webhook URL 
-in your Dialowflow Agent Fulfulment Tab (instead of the ```https://gaudy-coral.glitch.me/```). The Dialogflow agent will now
-use your server on glitch as the backend. Make sure to save your changes.
+* Make an account or login to [glitch](http://glitch.me)  
+*  Go to [this glitch link](https://glitch.com/edit/#!/gaudy-coral) and click on ```Remix to edit``` so that you can clone this project to your account  
+* Follow the install section of this document and paste the API keys in the .env file in glitch. Note that the .env file is already present in glitch by default and you don't need to create a new one.
+
+#### 2️⃣ Step 2
+__Copy Webhook URL__  
+* If you've used the ngrok method, copy the public url form the console.
+* If you've used the glitch method, copy your live glitch link URL (by clicking on Show -> In a new window)
+* Paste it into the the Webhook URL in your Dialowflow Agent Fulfulment Tab (instead of the ```https://gaudy-coral.glitch.me/```). The Dialogflow agent will now use your server on glitch as the backend. Make sure to save your changes.
 
 ## Using it on Google Assistant
 
