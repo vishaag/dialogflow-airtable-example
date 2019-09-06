@@ -79,7 +79,7 @@ This will open the google assistant console.
 You can ask the following phrases : 
 ```
 attractions near me
-attrations near T2
+attractions near T2
 attractions near terminal1
 attractions near jewel
 things to see in t2
