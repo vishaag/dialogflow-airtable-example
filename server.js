@@ -1,8 +1,8 @@
 var Airtable = require('airtable');
 
 var attractionsBase = new Airtable({
-  apiKey: `${process.env.AIRTABLE_API_KEY}`,
-}).base(`${process.env.AIRTABLE_ATTRACTIONS_ID}`);
+  apiKey: process.env.AIRTABLE_API_KEY,
+}).base(process.env.AIRTABLE_ATTRACTIONS_ID);
 
 var express = require('express');
 var expressApp = express();
@@ -110,8 +110,6 @@ app.intent('Default Fallback Intent', conv => {
 
 // POST Endpoint for dialogflow
 expressApp.post("/", app)
-
-// expressApp.get("/", function(request, response) {});
 
 var listener = expressApp.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);

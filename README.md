@@ -27,11 +27,8 @@ See deployment for notes on how to deploy the project on a live system.
 
 ### Installing
 
-```
-npm install
-touch .env
-```
-* Now, open the .env file and paste the following
+* Open the .env file and paste the following
+
 ```
 # Your Airtable API key. It'll look like key123asdf123asdf
 AIRTABLE_API_KEY=
@@ -41,35 +38,11 @@ AIRTABLE_ATTRACTIONS_ID=
 ```
 * Paste the API keys we copied earlier into their respective places and save the file
 
-## Running on local
-```
-node server.js
-```
-```
-# if you want to set breakpoints and inspect the code
-node --inspect server.js
-```
-You can now send POST requests to this server to debug and test how the code works. Although if you need to use it
-with Google Assistant, you will need to deploy it on a live system.
+## Deployment
 
-# Deployment
-
-#### 1️⃣ Step 1
-__Option 1__  
-Install a tunneling software like ngrok (https://ngrok.com/) to get a public URL for your localhost.
-
-__Option 2 (Recommended)__  
-A better option would be to deploy it on a real live server. One of the easiest way to do this would be
-deploying it on glitch.  
-* Make an account or login to [glitch](http://glitch.me)  
-*  Go to [this glitch link](https://glitch.com/edit/#!/gaudy-coral) and click on ```Remix to edit``` so that you can clone this project to your account  
-* Follow the install section of this document and paste the API keys in the .env file in glitch. Note that the .env file is already present in glitch by default and you don't need to create a new one.
-
-#### 2️⃣ Step 2
-__Copy Webhook URL__  
-* If you've used the ngrok method, copy the public url form the console.
-* If you've used the glitch method, copy your live glitch link URL (by clicking on Show -> In a new window)
-* Paste it into the the Webhook URL in your Dialowflow Agent Fulfulment Tab (instead of the ```https://gaudy-coral.glitch.me/```). The Dialogflow agent will now use your server on glitch as the backend. Make sure to save your changes.
+* Get your live glitch link (by clicking on Show -> In a new window) and paste it into the the Webhook URL 
+in your Dialowflow Agent Fulfulment Tab (instead of the ```https://gaudy-coral.glitch.me/```). The Dialogflow agent will now
+use your server on glitch as the backend. Make sure to save your changes.
 
 ## Using it on Google Assistant
 
@@ -87,10 +60,16 @@ things to see in t2
 Explore the Attraction intent in your Dialogflow agent to find what other phrases you can ask. You can also add more training phrases. Make sure you
 tag the ```airport-location``` entity if you want to filter based on location.
 
+### Demo
+💃💃💃 Talk to the bot! 🕺🕺🕺
+![alt text][logo]
+
+[logo]: https://cdn.glitch.com/b83fbab5-1da9-4904-9d90-9b27a994f32e%2Fchatbot-demo.gif?v=1567742893772 "Chatbot Demo"
+
 
 ## Links
+* [Github Link](https://github.com/vishaag/dialogflow-airtable-example) - Project Github page
 * [Glitch Project](https://glitch.com/edit/#!/gaudy-coral) - Example application running on glitch
 * [Glitch](http://glitch.me) - Glitch website
 * [Airtable](https://airtable.com) - Airtable website
 * [Dialogflow](https://dialogflow.com) - Dialogflow website
-
