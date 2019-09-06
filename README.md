@@ -10,14 +10,13 @@ See deployment for notes on how to deploy the project on a live system.
 ### Prerequisites
 
 1. Dialogflow Setup
-   1. Create an account or login in to [Dialogflow](https://dialogflow.com) and create a new agent with the name 'Changi-Attractions'
-   2. Click on the agent settings (gear icon) and go to 'Export and Import' tab and click on 'Import from ZIP'
-   3. Select the 'Changi-Attractions.zip' (in the Dialogflow folder) and import it into dialogflow
-   4. Explore the the 'intents' and 'entities' tab
+   1. Create an account or login in to [Dialogflow](https://dialogflow.com) and create a new agent with the name ```Changi-Attractions```
+   2. Click on the agent settings (gear icon) and go to ```Export and Import``` tab and click on ```Import from ZIP```
+   3. Select the ```Changi-Attractions.zip``` (in the Dialogflow folder) and import it into dialogflow
+   4. Explore the the ```intents``` and ```entities``` tab
    
-2. Create an account in Airtable and create a new workspace. Click on 'Add a base' and 'import a spreadsheet', import the .csv file (in the database folder) and name it 'Changi'.
-Open the created base to explore the data.
-
+2. Create an account in Airtable and create a new workspace. Click on ```Add a base``` and ```import a spreadsheet```, import the .csv file (in the database folder) and name it 'Changi'.
+3. Open the created base and you can see the sheet name as ```Imported table```. Change it to ```Attractions```.
 3. Retrieve API keys from Airtable
    1. Account API key: 
    go to (https://airtable.com/account) and find your airtable account API key
